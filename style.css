@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 375px;
+    height: 812px;
+    background: rgb(125, 141, 222);
+    background: radial-gradient(circle, rgba(125, 141, 222, 1) 0%, rgba(134, 16, 152, 1) 100%);
+    border-radius: 5px;
+}
+
+.todo-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Sriracha", cursive;
+    margin: 30px 0 15px 0;
+    font-weight: bold;
+}
+
+.todo-header__title {
+}
+
+.todo-header__sub-title {
+    text-align: center;
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-input__text-area {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Sriracha", cursive;
+    font-size: larger;
+    outline: none;
+}
+
+.todo-input__text-area:focus {
+    border: 3px solid rgb(221, 0, 0);
+}
+
+.todo-input__input-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 35px;
+    background: rgb(142, 222, 125);
+    background: radial-gradient(circle, rgba(142, 222, 125, 1) 0%, rgba(17, 150, 2, 1) 100%);
+    font-family: "Sriracha", cursive;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+}
+
+.todo-list {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.todo-list__item {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.item-input {
+    border-radius: 5px;
+    background: rgb(225, 198, 139);
+    background: linear-gradient(0deg, rgba(225, 198, 139, 1) 0%, rgba(245, 240, 228, 1) 100%);
+    font-family: "Sriracha", cursive;
+    width: 250px;
+    word-wrap: break-word;
+}
+
+.item-remove {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    border-radius: 15px;
+    outline: none;
+    background: rgb(216, 3, 12);
+    background: radial-gradient(circle, rgba(216, 3, 12, 1) 0%, rgba(150, 38, 2, 1) 100%);
+    font-size: initial;
+    font-weight: bold;
+    font-family: "Sriracha", cursive;
+    margin-right: 12px;
+}
+
+.todo-footer {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-family: "Sriracha", cursive;
+}
+
+.footer-text {
+}
+
+/* Styled scrollbar */
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:#ecedee
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: black;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:black;
+    }
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 4px;
+    }
